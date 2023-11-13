@@ -15,6 +15,7 @@ const server = http.createServer((req,res) => {  // anonymous function
   // console.log(req.url, req.method, req.headers)
   //console.log('Shreyas Srikanth');
   const url = req.url;
+  //inside if we must return so that it exits the function after res.end
   if(url === '/home'){
     res.setHeader('Content-Type','text/html');
   res.write('<html>');
